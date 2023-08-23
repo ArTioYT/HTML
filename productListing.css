@@ -94,17 +94,14 @@
     font-family: ProximaNova sans-serif;
 }
 .ad {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+   position: fixed;
     width: 1440px;
     height: 600px;
     top: 120px;
     background-color: #F3F3F3;
 }
 .apparels {
-    position: absolute;
+    position: fixed;
     width: 237px;
     height: 90px;
     top: 175px;
@@ -118,7 +115,7 @@
     font-family: 'Roboto', sans-serif;
 }
 .history {
-    position: absolute;
+    position: fixed;
     width: 555px;
     height: 60px;
     top: 290px;
@@ -131,7 +128,7 @@
     font-family: ProximaNova sans-serif;
 }
 .adPicture {
-    position: absolute;
+    position: fixed;
     width: 399px;
     height: 600px;
     top: -2px;
@@ -146,7 +143,7 @@
     background: #FFFFFF;
 }
 .women {
-    position: absolute;
+    position: fixed;
     width: 60px;
     height: 40px;
     top: 800px;
@@ -160,7 +157,7 @@
 
 }
 .sorting {
-    position: absolute;
+    position: fixed;
     width: 265px;
     height: 42px;
     top: 730px;
@@ -168,7 +165,7 @@
 
 }
 .sortBy {
-    position: absolute;
+    position: fixed;
     width: 76px;
     height: 40px;
     top: 732px;
@@ -182,7 +179,7 @@
     font-family: Roboto sans-serif;
 }
 .borderPrice {
-    position: absolute;
+    position: fixed;
     width: 165px;
     height: 40px;
     top: 730px;
@@ -191,7 +188,7 @@
     border-color: #DEDEDE;
 }
 .price {
-    position: absolute;
+    position: fixed;
     width: 135px;
     height: 20px;
     top: 13px;
@@ -205,7 +202,7 @@
 }
 
 .filters {
-    position: absolute;
+    position: fixed;
     width: 260px;
     height: 802px;
     top: 833px;
@@ -213,7 +210,7 @@
     border: 1px solid #000000
 }
 .products {
-    position: absolute;
+    position: fixed;
     width: 848px;
     height: 2103px;
     top: 820px;
@@ -221,7 +218,7 @@
     background-color: red;
 }
 .footer {
-    position: absolute;
+    position: fixed;
     width: 1440px;
     height: 320px;
     top: 2980px;
@@ -234,7 +231,7 @@
     left: 149px;
 }
 .categories {
-    position: absolute;
+    position: fixed;
     width: 87px;
     height: 30px;
     top: 41px;
@@ -248,7 +245,7 @@
     color: #FFFFFF;
 }
 .aboutUs {
-    position: absolute;
+    position: fixed;
     width: 84px;
     height: 125px;
     top: 94px;
@@ -267,7 +264,7 @@
     left: 345px;
 }
 .partners {
-    position: absolute;
+    position: fixed;
     width: 69px;
     height: 30px;
     top: 41px;
@@ -281,7 +278,7 @@
     color: #FFFFFF;
 }
 .support {
-    position: absolute;
+    position: fixed;
     width: 117px;
     height: 100px;
     top: 94px;
@@ -294,7 +291,7 @@
     color: #DEDEDE;
 }
 .contact {
-    position: absolute;
+    position: fixed;
     width: 87px;
     height: 30px;
     top: 41px;
