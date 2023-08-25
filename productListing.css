@@ -5,7 +5,10 @@
 }
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 .ship {
     display: flex;
     align-items: center;
@@ -15,127 +18,71 @@
     font-size: 12px;
     background-color: #33333A;
     color: #ffffff;
-
 }
 
 .header {
+    display: flex;
+    justify-content: space-between;
 
-    position: absolute;
-    width: 1440px;
+    padding: 0 150px;
     height: 80px;
-    top: 40px;
-    background-color: #ffffff;
     box-shadow: 0 1px 0 0 #0000001A;
-
 }
+
+.header .left, .header .right {
+    display: flex;
+    align-items: center;
+}
+
+.header a {
+    margin-right: 40px;
+
+    color: #33333A;
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: ProximaNova, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.header a.active {
+    color: #FF5E1B;
+}
+
 .logo {
-    position: absolute;
-    width: 127px;
-    height: 40px;
-    top: 20px;
-    left: 150px;
+    position: relative;
+    top: -8px;
 }
-.shop {
-    position: absolute;
-    left: 311px;
-    top: 33px;
-    font-size: 12px;
-    line-height: 40px;
-    letter-spacing: 1px;
-    color: #FF6008;
-    font-family: ProximaNova, sans-serif;
-}
-.fabric {
-    position: absolute;
-    top: 33px;
-    left: 399px;
-    font-size: 12px;
-    line-height: 40px;
-    letter-spacing: 1px;
-    color: black;
-    font-family: ProximaNova, sans-serif;
-}
-.journal {
-    position: absolute;
-    top: 33px;
-    left: 498px;
-    font-size: 12px;
-    line-height: 40px;
-    letter-spacing: 1px;
-    color: black;
-    font-family: ProximaNova, sans-serif;
-}
-.about {
-    position: absolute;
-    top: 33px;
-    left: 613px;
-    font-size: 12px;
-    line-height: 40px;
-    letter-spacing: 1px;
-    color: black;
-    font-family: ProximaNova, sans-serif;
-}
+
 .profile {
-    position: absolute;
-    width: 157px;
-    height: 40px;
-    top: 20px;
-    left: 953px;
-
+    display: flex;
+    align-items: center;
 }
-.welcome {
-    position: absolute;
-    width: 107px;
-    top: 13px;
-    font-family: Proxima Nova, sans-serif;
-    font-size: 12px;
-    line-height: 40px;
-    letter-spacing: 1px;
-    text-align: left;
-    color: black;
 
-}
-.profilePhoto {
-    position: absolute;
+.profile-photo {
     width: 40px;
     height: 40px;
-    left: 117px;
 
-
+    margin-left: 10px;
 }
-.search {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    top: 30px;
-    left: 1140px;
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-}
-.heart {
-    position: absolute;
-    width: 20px;
-    height: 18px;
-    top: 31px;
-    left: 1200px;
-
-}
-.shop-bag {
-    position: absolute;
     width: 40px;
     height: 40px;
-    top: 20px;
-    left: 1250px;
-
+    cursor: pointer;
 }
+
 .ad {
-   position: absolute;
     width: 1440px;
     height: 600px;
     top: 120px;
     background-color: #F3F3F3;
 }
 .apparels {
-    position: absolute;
     top: 175px;
     left: 543px;
     font-size: 60px;
@@ -147,7 +94,6 @@
     font-family: 'Roboto', sans-serif;
 }
 .history {
-    position: absolute;
     width: 555px;
     top: 290px;
     left: 385px;
@@ -158,21 +104,18 @@
     font-family: ProximaNova, sans-serif;
 }
 .adPicture {
-    position: absolute;
     width: 399px;
     height: 600px;
     top: -2px;
     left: 905px;
 }
 .nav {
-    position: absolute;
     width: 1440px;
     height: 60px;
     top: 720px;
     box-shadow: 0 5px 20px 0 #0000000D;
 }
 .women {
-    position: absolute;
     top: 741px;
     left: 153px;
     font-family: Proxima Nova, sans-serif;
@@ -184,13 +127,11 @@
 
 }
 .sorting {
-    position: absolute;
     top: 730px;
     left: 1025px;
 
 }
 .sortBy {
-    position: absolute;
     top: 732px;
     left: 1025px;
     font-size: 24px;
@@ -204,7 +145,6 @@
 
 
 .filters {
-    position: absolute;
     width: 260px;
     height: 802px;
     top: 833px;
@@ -212,7 +152,6 @@
     border: 1px solid #000000
 }
 .products {
-    position: absolute;
     width: 848px;
     height: 2103px;
     top: 820px;
@@ -220,7 +159,6 @@
     background-color: red;
 }
 .footer {
-    position: absolute;
     width: 1440px;
     height: 320px;
     top: 2980px;
@@ -233,7 +171,6 @@
     left: 149px;
 }
 .categories {
-    position: absolute;
     width: 87px;
     height: 30px;
     top: 41px;
@@ -247,7 +184,6 @@
     color: #FFFFFF;
 }
 .aboutUs {
-    position: absolute;
     width: 84px;
     height: 125px;
     top: 94px;
@@ -265,7 +201,6 @@
     left: 345px;
 }
 .partners {
-    position: absolute;
     width: 69px;
     top: 41px;
     left: 345px;
@@ -278,7 +213,6 @@
     color: #FFFFFF;
 }
 .support {
-    position: absolute;
     width: 117px;
     top: 94px;
     left: 345px;
@@ -290,7 +224,6 @@
     color: #DEDEDE;
 }
 .contact {
-    position: absolute;
     width: 87px;
     top: 41px;
     left: 538px;
