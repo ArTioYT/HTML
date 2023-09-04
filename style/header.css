@@ -1,0 +1,60 @@
+.ship {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Proxima Nova, sans-serif;
+    height: 40px;
+    background-color: #33333A;
+    color: #ffffff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 150px;
+    height: 80px;
+    box-shadow: 0 1px 0 0 #0000001A;
+}
+
+.header .left, .header .right {
+    display: flex;
+    align-items: center;
+}
+
+.header a {
+    margin-right: 40px;
+
+    color: #33333A;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.header a.active {
+    color: #FF5E1B;
+}
+
+.logo {
+    position: relative;
+    top: -8px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}

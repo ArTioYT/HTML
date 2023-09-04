@@ -1,0 +1,22 @@
+@font-face {
+    font-family: ProximaNova, sans-serif;
+    font-weight: 400;
+    src: url("../Shrifts/ProximaNova-Regular.ttf");
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 12px;
+    font-family: ProximaNova, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+

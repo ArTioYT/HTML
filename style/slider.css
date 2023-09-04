@@ -1,0 +1,27 @@
+.slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 600px;
+    background-color: #F3F3F3;
+}
+.slider h2 {
+    display: flex;
+    font-size: 60px;
+    line-height: 90px;
+    color:#33333A;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.slider-subtitle {
+    display: flex;
+    left: 442px;
+    font-size: 18px;
+    line-height: 30px;
+}
+.slider img {
+    position: absolute;
+    right: 1%;
+}

@@ -1,0 +1,157 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 150px;
+    height: 60px;
+    box-shadow: 0 5px 20px 0 #0000000D;
+}
+.bread-crumbs {
+    font-size: 18px;
+    color: blue;
+}
+.sort-by {
+    font-size: 24px;
+    line-height: 40px;
+    text-align: left;
+    color: #333333;
+    font-family: Roboto, sans-serif;
+}
+.sorting {
+    width: 165px;
+    height: 40px;
+    margin: 10px
+}
+.filters-top-frame {
+    min-width: 260px;
+    height: 802px;
+
+}
+
+.filters-frame {
+    width: 260px;
+    height: 630px;
+    top: 870px;
+    left: 153px;
+    box-shadow: 0 -2px 0 0 #F3F3F3;
+    background: #FFFFFF;
+
+}
+
+.filters {
+    display: flex;
+    width: 50px;
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+
+.reset {
+    display: flex;
+    width: 40px;
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+.filters-apparels-frame {
+    width: 250px;
+    height: 40px;
+    top: 882px;
+    left: 153px;
+}
+.filter-apparels {
+    width: 95px;
+    height: 40px;
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: left;
+}
+.apparels-categories-frame {
+    display: flex;
+    height: 160px;
+}
+.apparels-categories {
+    display: flex;
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+.other-categories {
+    display: flex;
+    flex-direction: column;
+    height: 190px;
+}
+.accessories {
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    line-height: 40px;
+}
+.houseware {
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    line-height: 40px;
+}
+.others {
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    line-height: 40px;
+}
+.techniques {
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    line-height: 40px;
+}
+.styles-frame {
+    display: flex;
+    height: 40px;
+}
+.styles {
+    display: flex;
+    left: 153px;
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    line-height: 40px;
+}
+.styles-categories-frame {
+    display: flex;
+    font-size: 12px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+.styles-categories {
+    display: flex;
+    height: 40px;
+    font-family: Proxima Nova, sans-serif;
+    font-size: 12px;
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+.sizes-frame {
+    display: flex;
+    height: 40px;
+    box-shadow: 0 -2px 0 0 #F3F3F3;
+}
+.sizes {
+    display: flex;
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+.sizes-buttons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 40px;
+}
+.sizing-guide {
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+    letter-spacing: 1px;
+
+}
