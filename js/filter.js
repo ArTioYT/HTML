@@ -56,7 +56,7 @@ filters.forEach(({name, items, img}) => {
     })
     reset.addEventListener("click", () => {
 
-    })
+    });
 
 
 
