@@ -52,7 +52,7 @@
 </div>
 
 <nav>
-    <a class="bread-crumbs" href="#"> Women</a>>
+    <a class="bread-crumbs" href="#"> Women</a>
     <label class="sort-by">
         Sort By
         <select class="sorting" name="sorting" id="sorting">
@@ -66,50 +66,27 @@
 </nav>
 
 <div class="wrapper">
-    <div class="filters-top-frame">
-        <div class="filters">FILTERS</div>
-        <a class="reset" href="#">RESET</a>
-        <div class="filters-frame">
-            <div class="filters-apparels-frame">
-                <div class="filter-apparels">Apparels</div>
-            </div>
-            <div class="apparels-categories-frame">
-                <div class="apparels-categories">
-                    Pants
-                    Jumpsuits
-                    Shorts
-                    Tops
-                </div>
-                <div class="other-categories">
-                    <div class="accessories">Accessories</div>
-                    <div class="houseware">Houseware</div>
-                    <div class="others">Others</div>
-                    <div class="techniques">Techniques</div>
-                </div>
-                <div class="styles-frame">
-                    <div class="styles">Styles</div>
-                    <div class="styles-categories-frame">
-                        <div class="styles-categories">
-                            Bold
-                            Monochrome
-                            Neutrals
-                        </div>
-                    </div>
-                </div>
-                <div class="sizes-frame">
-                    <div class="sizes">SIZES</div>
-                    <div class="sizes-buttons">
-                        <button>1</button>
-                        <button>2</button>
-                        <button>3</button>
-                        <button>4</button>
-                    </div>
-                </div>
-            </div>
-            <div class="sizing-guide">see our Sizing Guide</div>
+    <div class="filter-frame">
+        <div class="filter-header">
+            <span class="filters-label">Filters</span>
+            <button class="reset-label">Reset</button>
+        </div>
+        <div class="filters" id="filters"></div>
+        <div class="sizes">
+            <div class="sizes-title">SIZES</div>
+
+            <button class="size-button">1</button>
+            <button class="size-button">2</button>
+            <button class="size-button">3</button>
+            <button class="size-button">4</button>
+            <div class="guide">see our Sizing Guide</div>
         </div>
     </div>
-    <div class="products">
+
+
+    <div class="products" id="products"></div>
+    </div>
+    <!--<div class="products">
         <div class="product-1">
             <img src="img/35767925422533.jpeg" alt="">
             <div class="product-name">Blue costume</div>
@@ -147,7 +124,7 @@
         </div>
         <div class="product-8">
             <img src="img/vvvvv.jpg" alt="">
-            <div class="product-name">blue jumper</div>
+            <div class="product-name">Blue jumper</div>
             <div class="product-cost">$99.99</div>
         </div>
         <div class="product-9">
@@ -170,7 +147,7 @@
             <div class="product-name">Yellow sweater</div>
             <div class="product-cost">$99.99</div>
         </div>
-    </div>
+    </div>-->
 </div>
 
 
@@ -201,7 +178,11 @@
         <div class="contact">
             Contact us
         </div>
+    </div>
+</div>
 
-        <script src="productListing.js"></script>
+<script src="js/constants.js"></script>
+<script src="js/filter.js"></script>
+<script src="js/product.js"></script>
 </body>
 </html>

@@ -28,7 +28,7 @@ nav {
 
 }
 
-.filters-frame {
+.new {
     width: 260px;
     height: 630px;
     top: 870px;
@@ -37,7 +37,7 @@ nav {
     background: #FFFFFF;
 
 }
-
+/*
 .filters {
     display: flex;
     width: 50px;
@@ -154,4 +154,135 @@ nav {
     line-height: 40px;
     letter-spacing: 1px;
 
+}*/
+/*filters*/
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+}
+.filters-label {
+    font-size: 12px;
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+.reset-label {
+    box-shadow: white;
+    border: white;
+    font-family: "Proxima Nova", sans-serif;
+    background-color: white;
+    line-height: 40px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.category-section:not(.open) .subCategories {
+    display: none;
+}
+.sub-category-section:not(.open) .subSubCategories {
+    display: none;
+}
+
+.filters {
+    box-shadow: 0 -2px 0 0 #F3F3F3;
+    min-width: 260px;
+}
+.category-name {
+    position: relative;
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    line-height: 40px;
+    cursor: pointer;
+}
+.category-sections {
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    line-height: 40px;
+}
+.category-section.open .category-name {
+    display: flex;
+}
+.category-section.open .category-name::after {
+    transform: rotate(180deg);
+}
+.sub-category-section.open .subSubCategories {
+    display: flex;
+}
+.sub-category-section.open .subCategory-name::after {
+    transform: rotate(90deg);
+}
+.subCategory-name {
+    position: relative;
+    display: flex;
+    padding-left: 20px ;
+    font-size: 12px;
+    line-height: 40px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.subSubCategories {
+    display: flex;
+    flex-direction: column;
+}
+.subSubCategory-name {
+    display: flex;
+    padding-left: 23px;
+    font-size: 12px;
+    line-height: 40px;
+    margin-left: 50px;
+}
+.category-name::after {
+    content: url("../img/arrow-up.png");
+    position: absolute;
+    width: 10px;
+    height: 5px;
+    right: 5px;
+    top: 16px;
+    font-size: 0;
+    line-height: 0;
+}
+.subCategory-name::after {
+    content: url("../img/arrow-right.png");
+    position: absolute;
+    width: 10px;
+    height: 5px;
+    top: 16px;
+    left: 3px;
+    font-size: 0;
+    line-height: 0;
+}
+.subCategory-name:hover {
+    background-color: #DEDEDE;
+
+}
+.active {
+    color: #FF5E1B;
+}
+.sizes {
+    width: 260px;
+    height: 145px;
+    top: 1490px;
+    left: 153px;
+    box-shadow: 0 -2px 0 0 #F3F3F3;
+}
+.sizes-title {
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+.size-button {
+    background-color: white;
+    border: 1px solid #F3F3F3;
+    cursor: pointer;
+    width: 50px;
+    height: 40px;
+    top: 1540px;
+    left: 167px;
+}
+.size-button:hover {
+    background-color: #DEDEDE;
+}
+.guide {
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+.category-name:hover {
+    background-color: #DEDEDE;
 }
