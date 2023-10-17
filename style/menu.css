@@ -160,7 +160,12 @@ nav {
     display: flex;
     justify-content: space-between;
 }
-.filters-label {
+.filter-label {
+    font-size: 12px;
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+.filter-labels {
     font-size: 12px;
     line-height: 40px;
     letter-spacing: 1px;
@@ -239,7 +244,7 @@ nav {
     font-size: 0;
     line-height: 0;
 }
-.subCategory-name::after {
+.subCategory-name::before {
     content: url("../img/arrow-right.png");
     position: absolute;
     width: 10px;
@@ -253,8 +258,23 @@ nav {
     background-color: #DEDEDE;
 
 }
-.active {
+.category-checkbox {
+    margin-right: 10px;
+    display: none;
+}
+.label {
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+}
+.subSubCategory-name span {
+    cursor: pointer;
+}
+.category-checkbox:checked ~ span {
     color: #FF5E1B;
+}
+.label {
+
 }
 .sizes {
     width: 260px;
@@ -273,8 +293,6 @@ nav {
     cursor: pointer;
     width: 50px;
     height: 40px;
-    top: 1540px;
-    left: 167px;
 }
 .size-button:hover {
     background-color: #DEDEDE;
@@ -283,6 +301,10 @@ nav {
     line-height: 40px;
     letter-spacing: 1px;
 }
+
 .category-name:hover {
     background-color: #DEDEDE;
+}
+.size-active {
+    background-color: lightgrey;
 }

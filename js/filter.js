@@ -1,7 +1,8 @@
+const filterForm = document.querySelector(".filter-form");
 const filter = document.querySelector(".filters");
+const sizes = document.querySelector(".sizes");
 const reset = document.querySelector(".reset-label");
-// create filters container
-
+const filterLabels = document.querySelector(".filter-labels");
 filters.forEach(({name, items, img}) => {
     const subCategories = document.createElement('div');
     const categorySection = document.createElement('div');
@@ -27,12 +28,20 @@ filters.forEach(({name, items, img}) => {
         subCategoryName.classList.add("subCategory-name");
 
         items.forEach((item) => {
-            const subSubCategoryName = document.createElement('a');
-            subSubCategoryName.innerHTML = item.name;
-            subSubCategoryName.href = "#";
+            const subSubCategoryName = document.createElement('label');
+            const subSubCategory = document.createElement("span")
+            const input = document.createElement('input');
+            input.type = 'checkbox';
+            input.value = item.name;
+            input.id = item.id
+            // on click in form get all checkboxes with checked === true
+            subSubCategory.innerHTML = item.name;
             subSubCategories.append(subSubCategoryName);
+            subSubCategoryName.append(input);
+            subSubCategoryName.append(subSubCategory);
             subCategories.append(subSubCategories);
             subCategorySection.append(subSubCategories);
+            input.classList.add("category-checkbox");
             subSubCategoryName.classList.add("subSubCategory-name");
             subSubCategories.classList.add("subSubCategories");
         })
@@ -40,23 +49,64 @@ filters.forEach(({name, items, img}) => {
     filter.append(categorySection);
 })
 
-    filter.addEventListener("click", (event) => {
-        event.preventDefault();
-        if (event.target.classList.contains("category-name")) {
-            event.target.parentElement.classList.toggle("open");
-        }
-        if (event.target.classList.contains("subCategory-name")) {
-            event.target.parentElement.classList.toggle("open");
-        }
-    })
-    filter.addEventListener("click", (event) => {
-        if (event.target.classList.contains("subSubCategory-name")) {
-            event.target.classList.toggle("active");
-        }
-    })
-    reset.addEventListener("click", () => {
+filter.addEventListener("click", (event) => {
+    // event.preventDefault();
+    if (event.target.classList.contains("category-name")) {
+        event.target.parentElement.classList.toggle("open");
+    }
+    if (event.target.classList.contains("subCategory-name")) {
+        event.target.parentElement.classList.toggle("open");
+    }
+})
 
-    });
+const obj11 = {
+
+    }
+
+filterForm.addEventListener('change', (event) => {
+    if (event.target.checked) {
+        const label = document.createElement('label');
+        label.innerHTML = event.target.value
+        label.classList.add("label")
+        filterLabels.append(label);
+        obj11[event.target.value] = {input:event.target, label:label}
+
+        event.target.dispatchEvent(new CustomEvent("Ya lox", {
+            bubbles: true,
+            detail: {id:event.target.id},
+        }));
+
+    } else {
+        obj11[event.target.value].label.remove()
+    }
+})
+
+filterLabels.addEventListener('click', (event) => {
+    if (!event.target.innerHTML) return;
+    obj11[event.target.innerHTML].input.checked = false;
+    obj11[event.target.innerHTML].label.remove();
+    delete obj11[event.target.innerHTML];
+})
+
+reset.addEventListener("click", (event) => {
+    for (let prop in obj11) {
+        obj11[prop].input.checked = false
+        obj11[prop].label.remove()
+        delete obj11[prop]
+    }
+    console.log(obj11);
+})
+
+sizes.addEventListener("click", (event) => {
+    if (event.target.classList.contains("size-button")) {
+        event.target.classList.toggle("size-active");
+    }
+})
+
+
+
+
+
 
 
 

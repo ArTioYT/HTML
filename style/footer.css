@@ -1,69 +1,55 @@
 .footer {
     display: flex;
+    flex-direction: column;
     height: 320px;
     background: #33333A;
 }
 .category {
-    width: 87px;
+    display: flex;
+    flex-direction: column;
     height: 178px;
-    top: 41px;
-    left: 149px;
 }
 .apparels-categories {
-    width: 87px;
+    display: flex;
+    flex-direction: column;
     height: 30px;
-    top: 41px;
-    left: 149px;
     font-family: Roboto, sans-serif;
     font-size: 18px;
     line-height: 30px;
-    text-align: left;
     color: #FFFFFF;
 }
 .about-us {
-    width: 84px;
+    display: flex;
+    flex-direction: column;
     height: 125px;
-    top: 94px;
-    left: 149px;
     font-family: Proxima Nova, sans-serif;
     font-size: 14px;
     line-height: 25px;
-    text-align: left;
     color: #DEDEDE;
 }
 .partner {
-    width: 117px;
-    top: 41px;
-    left: 345px;
+    display: flex;
+    flex-direction: column;
 }
 .partners {
-    width: 69px;
-    top: 41px;
-    left: 345px;
+    display: flex;
+    flex-direction: column;
     font-family: Roboto, sans-serif;
     font-size: 18px;
     line-height: 30px;
-    text-align: left;
     color: #FFFFFF;
 }
 .support {
-    width: 117px;
-    top: 94px;
-    left: 345px;
-    font-family: Proxima Nova, sans-serif;
+    display: flex;
+    flex-direction: column;
     font-size: 14px;
     line-height: 25px;
-    text-align: left;
     color: #DEDEDE;
 }
 .contact {
-
-    width: 87px;
-    top: 41px;
-    left: 538px;
+    display: flex;
     font-family: Roboto, sans-serif;
     font-size: 18px;
     line-height: 30px;
-    text-align: left;
     color: #FFFFFF;
 }

@@ -308,79 +308,102 @@ const filters = [
 const products = [
     {
         id:1,
-        new1: 1,
+        categoryId:1,
+        size: "S",
         imagePath: "img/35767925422533.jpeg",
         name: "Blue costume",
         price: "$99.99"
     },
     {
-        id:1,
+        id:2,
+        categoryId:1,
+        size: "M",
         imagePath: "img/38078811274176.jpeg",
         name: "Light-blue costume",
         price: "$99.99"
     },
     {
-        id:1,
+        id:3,
+        categoryId:1,
+        size: "XL",
         new: true,
         imagePath: "img/57081157707569.jpeg",
         name: "Dark-green costume",
         price: "$99.99"
     },
     {
-        id:2,
+        id:4,
+        categoryId:2,
+        size: "S",
         imagePath: "img/87629994672011.jpeg",
         name: "Brown pants",
         price: "$99.99"
     },
     {
-        id:2,
+        id:5,
+        categoryId:2,
+        size: "S",
         new: true,
         imagePath: "img/aaaaa.jpg",
         name: "Brown pants",
         price: "$99.99"
     },
     {
-        id:2,
+        id:6,
+        categoryId:2,
+        size: "M",
         imagePath: "img/bbbb.jpg",
         name: "Jeans",
         price: "$99.99"
     },
     {
-        id:3,
+        id:7,
+        categoryId:3,
+        size: "XL",
         new: true,
         imagePath: "img/ccc.jpeg",
         name: "Light-blue jumper",
         price: "$99.99"
     },
     {
-        id:3,
+        id:8,
+        categoryId:3,
+        size: "XL",
         new: true,
         imagePath: "img/vvvvv.jpg",
         name: "Blue jumper",
         price: "$99.99"
     },
     {
-        id:3,
+        id:9,
+        categoryId:3,
+        size: "S",
         imagePath: "img/rrrr.jpg",
         name: "Fire suit",
         price: "$99.99"
     },
     {
-        id:4,
+        id:10,
+        categoryId:4,
+        size: "M",
         new: true,
         imagePath: "img/rttt.jpg",
         name: "Robe",
         price: "$99.99"
     },
     {
-        id:4,
+        id:11,
+        categoryId:4,
+        size: "XL",
         new: true,
         imagePath: "img/eee.jpg",
         name: "Pink jacket",
         price: "$99.99"
     },
     {
-        id:4,
+        id:12,
+        categoryId:4,
+        size: "M",
         imagePath: "img/69346803209172.jpeg",
         name: "Yellow sweater",
         price: "$99.99"
