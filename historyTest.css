@@ -1,0 +1,49 @@
+.product1 {
+    border: lightcoral 10px outset;
+}
+.product2 {
+    border: lightcoral 10px outset;
+}
+.productContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.productName {
+    display: flex;
+    margin-top: 12px;
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+}
+.productPrice {
+    display: flex;
+    margin-top: 10px;
+    font-size: 24px;
+    line-height: 30px;
+    color: #FF6008;
+}
+.productImage {
+    display: flex;
+    width: 458px;
+    height: 690px;
+}
+.product2Name {
+    display: flex;
+    margin-top: 12px;
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+}
+.product2Price {
+    display: flex;
+    margin-top: 10px;
+    font-size: 24px;
+    line-height: 30px;
+    color: #FF6008;
+}
+.product2Image {
+    display: flex;
+    width: 458px;
+    height: 690px;
+}

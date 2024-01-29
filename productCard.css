@@ -1,0 +1,397 @@
+@font-face {
+    font-family: "Proxima Nova";
+    font-weight: 300;
+    font-size: 16px;
+}
+
+body {
+    display: block;
+    font-size: 12px;
+    font-family: "Proxima Nova", sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.ship {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    background-color: #33333A;
+    color: #ffffff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 150px;
+    height: 80px;
+    box-shadow: 0 1px 0 0 #0000001A;
+}
+
+.header .left, .header .right {
+    display: flex;
+    align-items: center;
+}
+
+.header a {
+    margin-right: 40px;
+
+    color: #33333A;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.header a.active {
+    color: #FF5E1B;
+}
+
+.logo {
+    position: relative;
+    top: -8px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.nav {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 150px;
+    box-shadow: 0 5px 20px 0 #0000000D;
+}
+
+.slider{
+    display: flex;
+    width: 788px;
+    height: 690px;
+    gap: 30px;
+}
+
+.selectableImages {
+    width: 68px;
+    height: 68px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.selectableImageContainer {
+    display: flex;
+    flex-direction: column;
+}
+.selectedImagesContainer {
+    display: flex;
+    width: 458px;
+    height: 690px;
+}
+.sliderSelectedImage {
+    position: absolute;
+    width: 458px;
+    height: 690px;
+
+}
+.productCard {
+    display: flex;
+    height: 830px;
+    gap: 30px;
+    margin: 40px 150px 54px;
+}
+.productName {
+    display: flex;
+    margin-top: 12px;
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+}
+.productPrice {
+    display: flex;
+    margin-top: 10px;
+    font-size: 24px;
+    line-height: 30px;
+    color: #FF6008;
+}
+.descriptionContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 19px;
+}
+.description {
+    font-size: 18px;
+    line-height: 30px;
+}
+.descriptionText {
+    margin-top: 6px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #666666;
+}
+.descriptionPhoto1 {
+    display: flex;
+    height: 480px;
+    top: 1030px;
+}
+.descriptionPhoto1Text {
+    display: flex;
+
+}
+.seeMore {
+    margin-top: 13px;
+    margin-bottom: 17px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 2px;
+
+}
+.artisanEmploymentContainer {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 555px;
+    height: 50px;
+    gap: 127px;
+    font-weight: 300;
+    box-shadow: 0 -2px 0 0 #F9F8F6;
+}
+.partnerShipContainer {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 555px;
+    height: 50px;
+    gap: 172px;
+    box-shadow: 0 -2px 0 0 #F9F8F6;
+}
+.inCollabContainer {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 555px;
+    height: 50px;
+    gap: 186px;
+    box-shadow: 0 -2px 0 0 #F9F8F6;
+}
+.productInfo {
+    display: flex;
+    flex-direction: column;
+    width: 555px;
+    height: 690px;
+}
+
+.sizes{
+    display: flex;
+    width: 556px;
+    height: 235px;
+    box-shadow: 0 -2px 0 0 #F9F8F6;
+    background-color: #FF5E1B;
+}
+.featuresContainer {
+    margin-bottom: 10px;
+    box-shadow: 0 -2px 0 0 #F3F3F3;
+}
+.features {
+    font-size: 18px;
+    line-height: 30px;
+}
+.featuresText {
+    display: flex;
+    width: 200px;
+    font-size: 16px;
+    line-height: 20px;
+}
+.featuresOpenText {
+    margin-left: 454px;
+}
+.fabricCareContainer {
+    box-shadow: 0 -2px 0 0 #F3F3F3;
+}
+.fabricCare {
+    font-size: 18px;
+    line-height: 30px;
+}
+.fabricCareOpenText {
+    margin-left: 432px;
+}
+.fabricNotes {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    color: #33333A;
+}
+.fabricNotesText {
+    font-size: 16px;
+    line-height: 20px;
+    color: #666666;
+}
+.careInstructions {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    color: #33333A;
+}
+.careInstructionsText {
+    font-size: 16px;
+    line-height: 20px;
+    color: #666666;
+}
+.mainDescription {
+    display: flex;
+    flex-direction: column;
+    height: 1555px;
+}
+.descriptionPhoto1Text {
+    display: flex;
+    width: 722px;
+    margin-left: 345px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 25px;
+}
+.description1 {
+    display: flex;
+    width: 722px;
+    margin-left: 345px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 25px;
+}
+.descriptionPhotoContainer {
+    display: flex;
+    margin-left: 149px;
+    margin-top: 57px;
+    gap: 29px;
+}
+.descriptionPhoto234 {
+    display: flex;
+    width: 361px;
+    height: 360px;
+}
+.description2 {
+    display: flex;
+    width: 752px;
+    margin-top: 192px;
+    margin-left: 344px;
+    font-size: 16px;
+    line-height: 25px;
+}
+.instagram {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    width: 1140px;
+    height: 415px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.instagramText{
+    display: flex;
+    margin-top: 64px;
+    justify-content: center;
+    height: 60px;
+    font-family: Roboto, sans-serif;
+    font-size: 42px;
+    line-height: 60px;
+    text-align: center;
+
+}
+.instagramPhotoContainer {
+    display: flex;
+    margin-top: 28px;
+    gap: 30px;
+}
+
+.instagramImage {
+    display: flex;
+    width: 263px;
+    height: 263px;
+}
+
+.reviews {
+    display: flex;
+    padding: 55px 345px 57px;
+    flex-direction: column;
+    height: 565px;
+    margin-bottom: 62px;
+    background-color: #FCFCFC;
+}
+.review {
+    display: flex;
+    flex-direction: column;
+}
+.reviewsTitle{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Roboto, sans-serif;
+    font-size: 42px;
+    line-height: 60px;
+}
+.generalReviewRating {
+    display: flex;
+    margin-bottom: 35px;
+    gap: 10px;
+}
+.reviewRating {
+    display: flex;
+    gap: 10px;
+}
+.reviewMark {
+    font-size: 16px;
+    line-height: 20px;
+
+}
+.reviewTop {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 30px;
+}
+.reviewInfo {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    font-size: 16px;
+    line-height: 25px;
+}
+.reviewText {
+    font-size: 16px;
+    line-height: 25px;
+}
+.reviewMore {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    color: #FF5E1B;
+}
+.similar-products {
+    position: relative;
+    display: flex;
+    height: 568px;
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: yellow;
+}

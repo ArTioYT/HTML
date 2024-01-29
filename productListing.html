@@ -16,11 +16,7 @@
 </head>
 <body>
 
-<label for="bbb">click</label>
-<br>
-<input type="text" id="bbb">
-<br>
-<label><input type="checkbox" id="aaaa">checkbox</label>
+
 
 <div class="ship">Free shipping for orders above USD 150</div>
 
@@ -58,14 +54,19 @@
 </div>
 
 <nav>
-    <a class="bread-crumbs" href="#"> Women</a>
+    <span class="bread-crumbs">
+        <a href="#">Woman</a>
+    </span>
     <label class="sort-by">
         Sort By
         <select class="sorting" name="sorting" id="sorting">
-            <option value="ASK">ASK</option>
-            <option value="DESK">DESK</option>
-            <option value="NEWEST">NEWEST</option>
-            <option value="POPULAR">POPULAR</option>
+            <option value="SELECT">SELECT</option>
+            <option value="LOW TO HIGH">LOW TO HIGH</option>
+            <option value="HIGH TO LOW">HIGH TO LOW</option>
+            <option value="A-Z">A-Z</option>
+            <option value="Z-A">Z-A</option>
+            <option value="OLD TO NEW">OLD TO NEW</option>
+            <option value="NEW TO OLD">NEW TO OLD</option>
         </select>
     </label>
 
@@ -86,11 +87,12 @@
 
         <div class="sizes">
             <div class="sizes-title">SIZES</div>
-
-            <button class="size-button">1</button>
-            <button class="size-button">2</button>
-            <button class="size-button">3</button>
-            <button class="size-button">4</button>
+            <div class="size-buttons">
+                <button data-size="S" class="size-button active">S</button>
+                <button data-size="M" class="size-button">M</button>
+                <button data-size="XL" class="size-button">XL</button>
+                <button data-size="XXl" class="size-button">XXL</button>
+            </div>
             <div class="guide">see our Sizing Guide</div>
         </div>
     </div>
@@ -194,7 +196,13 @@
 </div>
 
 <script src="js/constants.js"></script>
-<script src="js/filter.js"></script>
-<script src="js/product.js"></script>
+<script type="module" src="js/filter.js"></script>
+<script type="module" src="js/product.js"></script>
+<script type="module" src="js/sizes.js"></script>
+<script type="module" src="js/reset.js"></script>
+<script type="module" src="js/labels.js"></script>
+<script type="module" src="js/filterState.js"></script>
+<script type="module" src="js/sortBy.js"></script>
+<script type="module" src="js/bread-crumbs.js"></script>
 </body>
 </html>
